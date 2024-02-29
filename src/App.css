@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,600,700);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #2b2d4c, #3e4179);
+  font-family: "Roboto", sans-serif;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,
+h2 {
+  text-align: center;
+  color: #fff;
+}
+
+table {
+  width: 80%;
+  height: 50vh;
+  margin: 10px auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.tbl-header {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.tbl-content {
+  height: 300px;
+  overflow-x: auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+}
+
+.tbl-row {
+  font-size: medium;
+  font-weight: 700;
+}
+
+.tbl-row:hover {
+  background: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* FlightDetails.css */
+.back {
+  margin: 40px 70px;
+}
+
+.back a {
+  color: #fff;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+.back a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.detail {
+  width: 60%;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #fff;
 }
